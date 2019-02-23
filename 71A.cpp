@@ -4,7 +4,7 @@
 
 int main()
 {
-    int n;
+    int n, k;
     std::string word;
 
     std::cin >> n;
@@ -14,9 +14,11 @@ int main()
     {
         std::cin >> word;
         
-        if(word.length() > 10) 
+        int wordLength = word.length();
+        
+        if( wordLength> 10) 
         {
-            word = word.at(0) + std::to_string(word.length() - 2) + word.at( word.length() - 1);
+            word = word.at(0) + std::to_string(wordLength - 2) + word.at( wordLength - 1);
         }
         
         std::cout << word << std::endl;
