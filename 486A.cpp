@@ -2,7 +2,7 @@
 
 long long f_n(long long  n)
 {
-    return ( ( 0 == n % 2 ) ? n / 2 : -( 1 + ( n - 1) / 2 ) );
+    return ( ( 0 == n % 2 ) ? n / 2 : -(n - 1) / 2 ) ;
 }
 
 int main()
